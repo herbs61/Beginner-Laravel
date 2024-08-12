@@ -14,7 +14,8 @@ class ListingFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(){
+    public function definition(): array
+    {
         return [
             'title' => $this->faker->sentence(),
             'tags' => 'laravel, api, backend',
@@ -22,7 +23,10 @@ class ListingFactory extends Factory
             'email' => $this->faker->companyEmail(),
             'website' => $this->faker->url(),
             'location' => $this->faker->city(),
-            'descrption' => $this->faker->paragraph(5)
+            'description' => $this->faker->paragraph(5),
+
+
+
         ];
     }
 }
